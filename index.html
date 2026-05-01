@@ -43,6 +43,7 @@
       background: rgba(10,10,10,0.85);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
+      transition: background 0.3s;
     }
 
     .nav-logo {
@@ -81,7 +82,7 @@
     .nav-cta:hover { background: var(--gold); color: var(--dark); }
 
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-    .hamburger span { width: 24px; height: 1.5px; background: var(--text); display: block; }
+    .hamburger span { width: 24px; height: 1.5px; background: var(--text); display: block; transition: 0.3s; }
 
     #hero {
       position: relative;
@@ -242,6 +243,7 @@
 
     .car-card {
       background: var(--dark-2);
+      padding: 0;
       overflow: hidden;
       transition: transform 0.3s;
       cursor: pointer;
@@ -494,6 +496,7 @@
       .cars-grid { grid-template-columns: 1fr; }
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
+      .stats { grid-template-columns: repeat(3, 1fr); }
       section { padding: 5rem 5%; }
     }
 
@@ -519,7 +522,6 @@
     </div>
   </nav>
 
-  <!-- HERO — DO NOT EDIT -->
   <section id="hero">
     <video autoplay muted loop playsinline>
       <source src="hero-logo.mp4" type="video/mp4" />
